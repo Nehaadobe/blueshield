@@ -1,0 +1,4 @@
+.quote {
+  --quote-color: var(--text-color);
+  --quote-text-align: start;
+}

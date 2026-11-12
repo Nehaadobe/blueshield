@@ -1,9 +1,0 @@
-.quote {
-  --quote-color: var(--text-color);
-  --quote-text-align: start;
-}
-
-.quote .quote-attribution {
-  font-size: var(--body-font-size-s);
-  font-style: italic;
-}

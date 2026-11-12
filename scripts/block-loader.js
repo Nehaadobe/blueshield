@@ -1,10 +1,8 @@
 import createBlockLoader from '../shared/scripts/block-loader.js';
 
-// Keep site-specific implementations and optional theme styles outside the subtree.
+// Site-owned loader settings. Add `styles: { blockName: url }` only for blocks that
+// need a customer theme stylesheet on top of the shared CSS.
 export const { loadBlock, loadSection, loadSections } = createBlockLoader({
   localBlocks: [],
-  styles: {
-    quote: new URL('../blocks/quote/quote.css', import.meta.url).href,
-    notice: new URL('../blocks/notice/notice.css', import.meta.url).href,
-  },
+  styles: {},
 });
